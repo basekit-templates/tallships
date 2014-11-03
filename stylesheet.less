@@ -217,18 +217,18 @@ body {
             	border-bottom: none;
             }
             &.folder {
-            	color: @color-swatch3;
+            	color: @font-swatch6-color;
             	&:after {
             		border-top-color: lighten(@color-swatch5, 32%);
             		top: 22px;
             	}
             	.text {
-            		color: @color-swatch2;
+            		color: @font-swatch6-color;
             	}
 	        }
 	        a {
 	        	&:hover {
-	        		color: lighten(@color-swatch5, 60%);
+	        		color: @font-swatch6-color-hover;
 	        	}
 	        }
         }
@@ -306,7 +306,7 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
 	height: 100%;
 	position: absolute;
 	right: 0; 
-	.transition( all, 0.5s, ease);
+	.transition(all, 0.5s, ease);
 }
 
 
@@ -1168,14 +1168,14 @@ textarea {
 /* 11. Misc Elements */
 
 button.btn {
-        	color: darken(@color-swatch2, 50%);
-        	border: 2px solid darken(@color-swatch2, 50%);
-        	background-color: @color-swatch1;
-        	border-radius: 0;
-        	&:hover {
-            	border: 2px solid @color-swatch3;
-            	background-color: white;
-            }
+	color: darken(@color-swatch2, 50%);
+	border: 2px solid darken(@color-swatch2, 50%);
+	background-color: @color-swatch1;
+	border-radius: 0;
+	&:hover {
+    	border: 2px solid @color-swatch3;
+    	background-color: white;
+    }
 }
 
 h5 {
