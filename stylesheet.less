@@ -1017,7 +1017,8 @@ input, .widget.profile form fieldset input, .widget.ecombasket .ecombasket-pull,
             }
         }
 
-.widget.dropbox button {
+.widget. button {
+	background-color: @font-swatch7-background-color;
 	&:hover {
 		border: none;
     	background-color: darken(@color-swatch3, 10%);
@@ -1056,11 +1057,28 @@ input.blog-search-input, .widget.signupform input, .widget.profile form fieldset
 	}
 }
 
-.widget.paypalbuynow .widget.button.paypal:hover {
-	.border-radius(4px);
-	border: none!important;
-	.transition(all, 0.5s, ease);
-	background-color: darken(@color-swatch3, 10%);
+.widget.paypalbuynow .widget.button.paypal, 
+.widget.dropbox button,
+.widget.tweet a
+ {
+	background-color: @font-swatch7-background-color;
+	border: 2px solid @color-swatch4!important;
+	&:hover {
+		background-color: @font-swatch7-background-color;
+		border: 2px solid @color-swatch3!important;
+	}
+}
+
+.widget.paypalbuynow .widget.button.paypal, .widget.paypalbuynow .widget.button.paypal:hover {
+	background-image: image('/images/ic-paypal.svg');
+}
+
+.widget.dropbox button, .widget.dropbox button:hover  {
+	background-image: image('/images/ic-dropbox.svg');
+}
+
+.widget.tweet a, .widget.tweet a:hover {
+	background-image: image('/images/ic-tweet.svg');
 }
 
 textarea {
