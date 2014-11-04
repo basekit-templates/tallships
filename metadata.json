@@ -118,7 +118,7 @@
             "color": "@color-swatch4",
             "letter-spacing": "0",
             "background-color": "transparent",
-            "background-color-hover": "lighten(@color-swatch1,8%)"
+            "background-color-hover": "transparent"
         },
         "font8": {
             "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
