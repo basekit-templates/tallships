@@ -135,18 +135,6 @@ body {
 	@media only screen and (max-height: 450px) {
 		height: auto;
 	}
-    /*&:after {
-    	@media only screen and (max-height: 450px) {
-    		background: @color-swatch6;
-			border-left: 1px solid black;
-			content: "";
-			display: block;
-			height: 100%;
-			right: 0;
-			width: 320px;
-			position: absolute;
-    	}
-    }*/
     @media @mobile {
     	right: -250px;
     	width: 250px;
@@ -185,7 +173,6 @@ body {
             &:hover { 
             	.transition( all, 0.5s, ease);
             	ul {
-            		/*background: darken(@color-swatch6, 3%);*/
             		color: @color-swatch3;
             		background: transparent;
             		border: 2px solid lighten(@color-swatch2, 10%);
@@ -241,18 +228,17 @@ body {
 		display: inline-block;
 		width: 42px;
 		height: 38px;
-		/*text-indent: -900em;*/
 		overflow: hidden;
 		cursor: pointer;
 		outline: none;
-		.transition( all, 0.5s, ease);
+		.transition(all, 0.5s, ease);
 	    @media @mobile {
 	    	right: 270px;
 	    	top: 16px;
 	    }
 	    &:hover {
 	    	background-color: fade(@color-swatch6, 25%);
-	    	.transition( all, 0.5s, ease);
+	    	.transition(all, 0.5s, ease);
 	    }
 		&:after {
 			content: '';
@@ -289,7 +275,7 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
 
 .menu-active #main, .menu-active .bk-header { 
 	right: 320px; 
-	.transition( all, 0.5s, ease);
+	.transition(all, 0.5s, ease);
     -webkit-backface-visibility: hidden;
     @media @mobile {
     	right: 250px;
@@ -297,7 +283,7 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
 }
 
 #main, .bk-header, .bk-pt-home #main .widget.feature.bk-tpl-hidden + .bk-header {
-	.transition( all, 0.5s, ease);
+	.transition(all, 0.5s, ease);
 	-webkit-backface-visibility: hidden;
 }
 
@@ -373,7 +359,7 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
 		&:hover {
 			background-color: white;
 			color: @color-swatch4;
-			.transition( all, 0.75s, ease);
+			.transition(all, 0.75s, ease);
 			span {
 				color: @color-swatch4;
 			}
@@ -513,7 +499,7 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
     	a {
     		color: white;
     		&:hover {
-	        text-decoration: none;
+	        	text-decoration: none;
 	        }
     	}
         ul {
@@ -527,7 +513,7 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
         	border: 0.1em solid white;
         	padding: 5px 20px;
         	&:hover {
-	        border: 0.1em solid @color-swatch3;
+	        	border: 0.1em solid @color-swatch3;
 	        }
         }
     }
@@ -588,7 +574,7 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
         line-height: @font-swatch5-line-height;
     }
     .menu-section-item-dietary-props .dietary-icon {
-    	        color: @color-swatch3;
+    	color: @color-swatch3;
         font-size: bkscale(@font-swatch5-font-size, 1.12);
     }
     .menu-subsection-promoted, .menu-items li.menu-item-promoted {
@@ -611,24 +597,22 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
         .menu-section-item-dietary-props .dietary-icon {
             
         }
-            .menu-item-price:after {
-    	content: "\2605";
-    	color: @color-swatch3;
-    	border: solid 2px @color-swatch3;
-        font-size: bkscale(@font-swatch5-font-size, 0.86);
-        padding: 5px 30px;
-        margin-top: 15px;
-        text-align: center;
-        width: 20%;
-        margin-bottom: 20px;
+        .menu-item-price:after {
+	    	content: "\2605";
+	    	color: @color-swatch3;
+	    	border: solid 2px @color-swatch3;
+	        font-size: bkscale(@font-swatch5-font-size, 0.86);
+	        padding: 5px 30px;
+	        margin-top: 15px;
+	        text-align: center;
+	        width: 20%;
+	        margin-bottom: 20px;
 
-    }
+	    }
     }
     .menu-subsection-name {
         color: @font-swatch2-color;
         margin-bottom: 0.25em;
-    }
-    .menu-item-description {
     }
     .menu-item-price p {
         color: @color-swatch1;
@@ -708,7 +692,7 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
 
 .widget.ecomproduct {
 	h2 {
-		padding-bottom: 5px
+		padding-bottom: 5px;
 	}
 	.ecom-product-price {
 		color: lighten(@color-swatch5, 20%);
@@ -725,7 +709,7 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
 	}
 	a {
 		color: @font-swatch5-color;
-		font-size: bkscale(@font-swatch5-font-size, 1.1)
+		font-size: bkscale(@font-swatch5-font-size, 1.1);
 	}
 	a.checkout-empty-link {
 		color: @font-swatch7-color;
@@ -977,15 +961,13 @@ input, textarea {
 	-webkit-appearance: none;
 	&:hover, &:focus {
 		border: 1px solid darken(@color-swatch7, 10%)!important;
-		transition: ease .5s border!important;
+		.transition(ease, .5s, border);
 	}
 }
 
 input {
 	@media @mobile {
 		width: 75%;
-	}
-	+ button.btn {
 	}
 }
 
@@ -1030,7 +1012,7 @@ input, .widget.profile form fieldset input, .widget.ecombasket .ecombasket-pull,
     }
 }
 
-.widget.tweet a  {
+.widget.tweet a {
 	&:hover {
     	background-color: darken(@color-swatch3, 10%);
     }
@@ -1038,7 +1020,7 @@ input, .widget.profile form fieldset input, .widget.ecombasket .ecombasket-pull,
 
 
 input.blog-search-input, .widget.signupform input, .widget.profile form fieldset input, input.js-display-control {
-	.border-radius (@radius: 4px 0 0 4px);
+	.border-radius(4px 0 0 4px);
 	margin-right: 0;
 }
 
@@ -1064,8 +1046,7 @@ input.blog-search-input, .widget.signupform input, .widget.profile form fieldset
 
 .widget.paypalbuynow .widget.button.paypal, 
 .widget.dropbox button,
-.widget.tweet a
- {
+.widget.tweet a {
 	background-color: @font-swatch7-background-color;
 	border: 2px solid @color-swatch4!important;
 	color: @font-swatch7-color;
@@ -1210,7 +1191,7 @@ h5 {
 }
 
 hr.line {
-	background-color: lighten(@color-swatch5, 75%)
+	background-color: lighten(@color-swatch5, 75%);
 }
 
 .widget.gallery ul li span.inner {
@@ -1235,7 +1216,7 @@ hr.line {
 }
 
 .widget.gallery .inner:hover .image-data {
-	.transition( opacity, 0.5s, ease );
+	.transition(opacity, 0.5s, ease );
 	opacity: 1;
 }
 
@@ -1307,8 +1288,6 @@ hr.line {
 .widget {
 	&.responsiveslideshow {
 		margin-top: 20px;
-		.slideshow-widget-wrapper {
-		}
 		.slideshow-widget-controls {
 			.dot {
 				background-color: fade(@color-swatch1, 65%);
@@ -1419,8 +1398,6 @@ hr.line {
 					right: inherit;
 				}
 			}
-		}
-		.slideshow-image-list {
 		}
 	}
 }
