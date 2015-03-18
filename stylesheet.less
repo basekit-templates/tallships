@@ -1,4 +1,4 @@
-/* 
+/*
 
 1. Imports & Includes
 2. Mixins
@@ -29,10 +29,10 @@
 }
 
 .transition (@prop: all, @time: 0.5s, @ease: ease) {
-	-webkit-transition: @prop @time @ease;  
+	-webkit-transition: @prop @time @ease;
 	-moz-transition:    @prop @time @ease;
-	-ms-transition:     @prop @time @ease; 
-	-o-transition:      @prop @time @ease;  
+	-ms-transition:     @prop @time @ease;
+	-o-transition:      @prop @time @ease;
 }
 
 /* 3. Header & Navigation */
@@ -170,7 +170,7 @@ body {
 	            text-transform: none;
 	            line-height: 1em;
         	}
-            &:hover { 
+            &:hover {
             	.transition( all, 0.5s, ease);
             	ul {
             		color: @color-swatch3;
@@ -224,7 +224,7 @@ body {
 	a.pull {
 		position: absolute;
 		right: 345px;
-		top: 30px; 
+		top: 30px;
 		display: inline-block;
 		width: 42px;
 		height: 38px;
@@ -261,7 +261,7 @@ body {
 div.widget .extendednavigation ul, div.widget.extendednavigation ul {
 	display: block;
 	li {
-		display: block; 
+		display: block;
 	}
 }
 
@@ -269,12 +269,12 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
 	display: block!important;
 }
 
-.menu-active .widget.extendednavigation#slide-menu { 
-	right: 0px; 
+.menu-active .widget.extendednavigation#slide-menu {
+	right: 0px;
 }
 
-.menu-active #main, .menu-active .bk-header { 
-	right: 320px; 
+.menu-active #main, .menu-active .bk-header {
+	right: 320px;
 	.transition(all, 0.5s, ease);
     -webkit-backface-visibility: hidden;
     @media @mobile {
@@ -287,11 +287,11 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
 	-webkit-backface-visibility: hidden;
 }
 
-.menu-active .bk-nav { 
+.menu-active .bk-nav {
 	display: table;
 	height: 100%;
 	position: absolute;
-	right: 0; 
+	right: 0;
 	.transition(all, 0.5s, ease);
 }
 
@@ -595,7 +595,7 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
             }
         }
         .menu-section-item-dietary-props .dietary-icon {
-            
+
         }
         .menu-item-price:after {
 	    	content: "\2605";
@@ -669,7 +669,7 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
 	}
 }
 
-.productlist-display-form, .productlist-item-count { 
+.productlist-display-form, .productlist-item-count {
     select {
     	color: lighten(@font-swatch5-color, 15%);
         font-size: bkscale(@font-swatch7-font-size, 0.85);
@@ -858,7 +858,7 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
 				outline: none;
 			}
 		}
-	}	
+	}
 	// Table
 	table {
 		margin: 20px 0 30px;
@@ -948,7 +948,7 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
 			background-color: @color-swatch1;
 		}
 	}
-	// 
+	//
 	.js-shipping-opts {
 		padding-bottom: 20px;
 		font-size: 14px;
@@ -1049,7 +1049,7 @@ input.blog-search-input, .widget.signupform input, .widget.profile form fieldset
 	}
 }
 
-.widget.paypalbuynow .widget.button.paypal, 
+.widget.paypalbuynow .widget.button.paypal,
 .widget.dropbox button,
 .widget.tweet a {
 	background-color: @font-swatch7-background-color;
@@ -1233,7 +1233,7 @@ hr.line {
 	p {
 		color: @color-swatch4;
 		padding: 0;
-	}	
+	}
 	li {
 		border-bottom: darken(@color-swatch1,10%);
 	}
@@ -1318,7 +1318,7 @@ hr.line {
 			}
 			span {
 				color: @color-swatch5;
-				padding: 20px 4px 0 10px; 
+				padding: 20px 4px 0 10px;
 				@media @mobile {
 					padding-right: 10px;
 				}
@@ -1468,6 +1468,20 @@ hr.line {
 		}
 	}
 }
+
+// Click to call widget tablet/mobile styles
+@media @tablet {
+    .widget.clicktocall a {
+        padding: 10px 10px 10px 10px;
+        border: 2px solid @color-swatch4;
+
+        &:hover {
+            padding: 10px 10px 10px 10px;
+            border: 2px solid @color-swatch3;
+        }
+    }
+}
+
 /* Scrollbars */
 
 body, html {
