@@ -761,7 +761,8 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
 	}
 }
 
-.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select {
+.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
+.advancedcontactform select {
 	color: lighten(@font-swatch5-color, 15%);
     font-size: bkscale(@font-swatch7-font-size, 0.85);
     height: 50px;
@@ -1088,7 +1089,8 @@ textarea {
 }
 
 .widget {
-    &.contactform {
+    &.contactform,
+    &.advancedcontactform {
     	label {
     		font-family: @font-swatch3-font-family;
     		font-size: @font-swatch4-font-size;
@@ -1185,9 +1187,25 @@ textarea {
     }
 }
 
+// Advanced Contact Form
+.select-wrap {
+    margin: 10px 0 20px;
+    display: inline-block;
+}
+
+.advancedcontactform__option-list {
+    margin: 0px 0 10px;
+}
+
+.advancedcontactform__label {
+    width: 100%;
+    display: block;
+}
+
 /* 11. Misc Elements */
 
-button.btn {
+button.btn,
+.advancedcontactform button {
 	color: @font-swatch7-color;
 	border: 2px solid darken(@color-swatch2, 50%);
 	background-color: @color-swatch1;
