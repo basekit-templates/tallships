@@ -1,5 +1,6 @@
 {
     "name":"tallships",
+    "versionTenCompatible": 1,
     "thumbnail":"tallships.png",
     "screenshot":"tallships-screenshot.jpg",
     "templateType":"standard",
