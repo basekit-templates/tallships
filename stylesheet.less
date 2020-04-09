@@ -41,10 +41,17 @@ body {
 	 background: @color-swatch1;
 }
 
+html,
+body,
+#wrap,
+.bk-pt-home {
+    height: 100%;
+}
+
 .bk-pt-home {
 	.widget.feature + .bk-header {
 		background: transparent;
-		padding: 65px 0 30px 30px;
+		padding: 35px 0 30px 30px;
 		position: absolute;
 		top: 0;
 		width: 90%;
@@ -74,11 +81,14 @@ body {
 }
 
 .bk-header {
+    .align-items(center);
 	background: lighten(@color-swatch6, 5%);
-	padding: 30px;
+    .flex-display;
+    .flex-wrap(wrap);
+    padding: 30px 100px 30px 30px;
 	width: 100%;
 	@media @mobile {
-		padding: 25px 30px 15px;
+		padding: 25px 75px 15px 30px;
 	}
 }
 
@@ -89,22 +99,9 @@ body {
 	&.logo {
 		margin-right: 12px;
 		vertical-align: top;
-		img {
-			@media @mobile {
-				max-width: 80%;
-				vertical-align: top;
-			}
-			@media only screen and (max-height: 450px) {
-				max-width: 80%;
-				vertical-align: top;
-			}
-		}
 	}
 	&.companyname {
 		white-space: nowrap;
-		@media @mobile {
-			max-width: 80%;
-		}
 		a {
 			@media @mobile {
 				font-size: bkscale(@font-swatch10-font-size, 0.96);
@@ -235,10 +232,6 @@ body {
 	    @media @mobile {
 	    	right: 270px;
 	    	top: 16px;
-	    }
-	    &:hover {
-	    	background-color: fade(@color-swatch6, 25%);
-	    	.transition(all, 0.5s, ease);
 	    }
 		&:after {
 			content: '';
