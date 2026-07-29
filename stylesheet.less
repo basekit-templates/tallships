@@ -41,11 +41,8 @@ body {
 	 background: @color-swatch1;
 }
 
-html,
-body,
-#wrap,
-.bk-pt-home {
-    height: 100%;
+.gdpr-footer__link {
+	font-size: 14px;
 }
 
 .bk-pt-home {
@@ -265,7 +262,7 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
 .menu-active .widget.extendednavigation#slide-menu {
 	right: 0px;
 }
-
+.menu-active + .gdpr-footer,
 .menu-active #main, .menu-active .bk-header {
 	right: 320px;
 	.transition(all, 0.5s, ease);
@@ -283,7 +280,7 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
 .menu-active .bk-nav {
 	display: table;
 	height: 100%;
-	position: absolute;
+	position: fixed;
 	right: 0;
 	.transition(all, 0.5s, ease);
 }
@@ -296,7 +293,7 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
 	height: 100%;
 
     .feature-bgimg {
-        min-height: 100%;
+        min-height: 100dvh;
     }
 }
 
@@ -385,17 +382,16 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
 
 #main {
 	display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
+	position: relative;
     width: 100%;
-    height: 100%;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     .border-radius(0px);
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+.bk-pt-home #main {
+	min-height: 100dvh;
 }
 
 .bk-pt-home #main .widget.feature.bk-tpl-hidden + .bk-header {
@@ -423,7 +419,7 @@ div.widget .extendednavigation > ul, div.widget.extendednavigation > ul {
 			display: block;
 			width: 100%;
 			color: @font-swatch5-color;
-			padding: 30px 0;
+			padding: 30px 0 40px;
 			text-align: center;
 		}
 	}
